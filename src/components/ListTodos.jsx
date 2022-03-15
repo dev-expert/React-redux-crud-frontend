@@ -30,10 +30,8 @@ const ListTodos = ({ setTodo }) => {
       <h2> You have {todos && todos.length} tasks </h2>
       {/* {todosState.getTodosStatus === "pending" ? <CircularProgress /> : null} */}
       {todos.map((todo) => (
-
         <Card
           style={{ width: 400, marginTop: '10px' }}
-
           actions={
             [
               <EditOutlined onClick={() => setTodo({ ...todo })} key="edit" />,
